@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: demoCrud
+datasources:
+  default:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/students?generateSimpleParameterMetadata=true&zeroDateTimeBehavior=convertToNull&verifyServerCertificate=false&useSSL=false
+    db-type: mysql
+    dialect: MYSQL
+    username: root
+    password: Subham@007
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+jpa.default.properties.hibernate.hbm2ddl.auto: update
